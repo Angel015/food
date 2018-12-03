@@ -1,0 +1,468 @@
+@import decor
+
+body
+  max-width: 1500px
+  margin: auto
+  background: #0d0d0d
+
+.top
+  background: #FFFFFF
+  display: flex
+  justify-content: flex-end
+  position: relative
+  height: 34px
+  align-items: center
+  & ul
+    list-style: none
+    display: flex
+    & li
+      margin: 0 5px
+      font-size: 18px
+      & i
+        color: #e7a331
+  &_logo
+    clip-path: polygon(50% 100%, 0 0, 100% 0)
+    background: #e7a331 url("../img/logo.png") no-repeat 50% 10%
+    width: 409px
+    height: 205px
+    position: absolute
+    left: 126px
+    top: 0
+    z-index: 1
+  &_social
+    margin: 0 175px 0 100px
+  &_contact
+    display: flex
+    width: 430px
+    justify-content: space-between
+    & ul li
+      margin-right: 45px
+      display: flex
+      & i
+        margin: 2px 10px 0 0
+
+  &_nav
+    background: url("../img/11.png") no-repeat
+    width: 100%
+    height: 799px
+    background-size: cover
+    &_menu
+      background: #000000
+      opacity: 0.64
+      padding-right: 143px
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      height: 90px
+      & a
+        text-decoration: none
+        list-style: none
+        font-family: $menu
+        font-size: 17px
+        color: #FFFFFF
+        margin: 0 22px
+        &:hover
+          color: #e7a331
+      & a.button
+        width: 162px
+        height: 33px
+        border-radius: 5px
+        border: 1px solid #ffffff
+        text-align: center
+        padding-top: 12px
+        &:hover
+          background-color: #e7a331
+          color: #FFFFFF
+  &_baner
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 900px
+    margin: 179px auto
+    color: #FFFFFF
+    & button
+      margin-top: 24px
+      background: none
+      border: #FFFFFF 1px solid
+
+.top-nav
+  background: rgba(0, 0, 0, 1)
+  opacity: 0.6
+  height: 50px
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  overflow: hidden
+
+.top-nav .menu-icon
+  display: none
+  width: 36px
+  height: 24px
+  padding: 0
+  background: url('../img/m-menu.png') center
+
+
+.top-nav a, .side-nav a
+  display: block
+  font-family: 'Open Sans', sans-serif
+  text-transform: uppercase
+  text-decoration: none
+  font-size: 15px
+
+.top-nav a
+  color: #fff
+  padding: 5px 8px
+
+.nav-item:hover
+  background-color: #E7A434
+  opacity: 0.4
+  transition: .3s
+
+.side-nav
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 1
+  background: #FFFFFF
+  width: 0
+  overflow-x: hidden
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2)
+  transition: 0.5s
+
+.side-nav a
+  color: #e7a434
+  padding: 20px
+
+.side-nav a:hover
+  color: #a07423
+  transition: .3s
+
+.side-nav .close
+  font-size: 40px
+  padding: 0 10px 0 0
+  text-align: right
+
+.about
+  display: flex
+  background: url("../img/image-2.png") no-repeat 105% 100%, url("../img/2.png") no-repeat
+  height: 616px
+  &_photo
+    height: 375px
+    width: 422px
+    position: relative
+    margin: 142px 80px 112px 165px
+  &_content
+    margin-top: 114px
+    width: 667px
+    display: flex
+    flex-direction: column
+
+.img_1, .img_2
+  position: absolute
+  background: url("../img/img.png")
+  width: 370px
+  height: 309px
+  border: 6px #FFFFFF solid
+  box-shadow: 2px 2px 1px 1px #9a9a9a
+
+.img_1
+  transform: rotate(350deg)
+
+.img_2
+  top: 0
+  left: 29px
+
+.special
+  display: flex
+  justify-content: center
+  align-items: center
+  background: url("../img/3.png")
+  height: 730px
+  padding-bottom: 45px
+  position: relative
+  &_content
+    background: url("../img/2.png")
+    height: 378px
+    width: 443px
+    padding: 44px 45px
+    display: flex
+    flex-direction: column
+    z-index: 1
+  &_photo
+    background: url("../img/4.png")
+    width: 670px
+    height: 554px
+    margin-left: -35px
+  &_abs
+    position: absolute
+    left: 0
+    bottom: -200px
+    background: url("../img/5.png") no-repeat 100% 100%
+    width: 190px
+    height: 394px
+    z-index: 1
+
+.delightful
+  background: url("../img/2.png")
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-top: 90px
+  padding-bottom: 117px
+  position: relative
+  &_wraping
+    display: flex
+    justify-content: center
+    margin-top: 57px
+  &_slide1
+    position: relative
+    background: url("../img/1.1.png")
+    width: 293px
+    height: 304px
+  &_slide2
+    position: relative
+    background: url("../img/1.2.png")
+    width: 293px
+    height: 304px
+  &_slide3
+    position: relative
+    background: url("../img/1.3.png")
+    width: 293px
+    height: 304px
+  &_slide4
+    position: relative
+    background: url("../img/1.4.png")
+    width: 293px
+    height: 304px
+  &_slide5
+    position: relative
+    background: url("../img/1.5.png")
+    width: 293px
+    height: 304px
+  &_slide6
+    position: relative
+    background: url("../img/1.6.png")
+    width: 293px
+    height: 304px
+  &_slide7
+    position: relative
+    background: url("../img/1.7.png")
+    width: 293px
+    height: 304px
+  &_slide8
+    position: relative
+    background: url("../img/1,8.png")
+    width: 293px
+    height: 304px
+
+  &_hover
+    position: absolute
+    top: 42px
+    left: 23px
+    background: #0d0d0d
+    opacity: 0.8
+    width: 247px
+    height: 220px
+    display: none
+    & h2
+      text-align: center
+      margin: 20px 0
+      color: #FFFFFF
+      opacity: 1
+      font-size: 22px
+    & h4
+      opacity: 1
+      color: #ffffff
+      font-family: $h2
+      font-size: 41px
+      font-weight: 400
+      text-transform: uppercase
+    & button
+      margin-top: 15px
+  &_abs
+    position: absolute
+    background: url("../img/image-1.png") no-repeat 0% 100%
+    width: 181px
+    height: 338px
+    bottom: -184px
+    right: 0
+
+.delightful_wraping > .slide:hover .delightful_hover
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.amazing
+  background: url("../img/2.7.png") no-repeat -5% 100%, url("../img/82.png") no-repeat 100% 0%
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding: 72px 0 172px 0
+  & h1, h2
+    color: #FFFFFF
+    margin: 0
+  &_block
+    display: flex
+    justify-content: center
+    margin-top: 61px
+    align-items: center
+  &_content
+    margin: 20px 0
+    z-index: 1
+    padding: 26px 63px 60px 12px
+    background: #FFFFFF
+    & h1, h5
+      color: #000000
+      margin: 0
+    & h1
+      margin-left: 45px
+    & h5
+      font-size: 18px
+      font-family: "Times New Roman", serif
+    & ul
+      list-style: none
+      margin: 0
+
+      & li
+        display: flex
+        margin-top: 10px
+        height: 52px
+        align-items: center
+  &_photo1
+    background: url("../img/2.1.png")
+    width: 668px
+    height: 536px
+    margin-right: -98px
+  &_photo2
+    background: url("../img/2.2.png")
+    width: 668px
+    height: 536px
+    margin-left: -98px
+  &_photo3
+    background: url("../img/2.3.png")
+    width: 668px
+    height: 536px
+    margin-right: -98px
+
+.mobile
+  background: url("../img/92.png") no-repeat
+  background-size: cover
+  display: flex
+  justify-content: center
+  padding: 47px 0 104px 0
+  &_photo
+    background: url("../img/mob.png")
+    width: 336px
+    height: 617px
+  &_wraping
+    margin-top: 80px
+    margin-left: 70px
+    display: flex
+    flex-direction: column
+    width: 570px
+    & h1, h2, h3
+      font-weight: 400
+      color: #FFFFFF
+    & h2
+      font-size: 30px
+      margin: -10px 0 48px 0
+    & h3
+      margin-top: -5px
+      font-family: $h2
+      text-transform: uppercase
+      font-size: 95px
+  &_store
+    display: flex
+    width: 544px
+    justify-content: space-between
+    align-items: center
+    & a, img
+      height: 76px
+      width: 269px
+    & a.google img, a.google
+      height: 84px
+      width: 243px
+
+.footer
+  background: url("../img/foter.png")
+  display: flex
+  padding: 64px 0 33px 0
+  position: relative
+  & h1, p
+    color: #FFFFFF
+    font-weight: 400
+    text-align: center
+  &_content
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 330px
+    margin-right: 120px
+    margin-left: 166px
+    & p
+      margin: 63px 0 110px 0
+    & ul
+      margin: 0 0 0 -30px
+      list-style: none
+      display: flex
+      & li
+        margin: 7px
+        font-size: 25px
+        & i
+          color: #e7a331
+  &_work
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 217px
+    margin-right: 153px
+    & p
+      margin-top: 52px
+  &_form
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-right: 166px
+    & form
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      & input, textarea
+        padding: 3px 10px
+        border: none
+        border-radius: 5px
+        margin: 5px 0
+        width: 351px
+        background: #323232
+        color: #9a9a9a
+        font-size: 15px
+        font-family: $h2
+      & input
+        height: 38px
+      & textarea
+        height: 103px
+      & button
+        margin-top: 8px
+  &_abs1
+    position: absolute
+    left: 0
+    top: 73px
+    background: url("../img/1111.png") no-repeat 100% 100%
+    height: 333px
+    width: 180px
+  &_abs2
+    position: absolute
+    right: 0
+    top: 73px
+    background: url("../img/2222.png") no-repeat 0% 100%
+    height: 285px
+    width: 140px
+
+@import "_media"
+@import "_media_mob"
+
+
+
+
+
